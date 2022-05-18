@@ -35,12 +35,12 @@ eval_dataset = file_based_input_fn_builder(
 
 
 bert_config = model_utils.transform_bert_to_texar_config(
-            os.path.join(bert_pretrain_dir, 'bert_config.json'))
+            os.path.join('/content/Abstractive-Summarization-With-Transfer-Learning/uncased_L-12_H-768_A-12/bert_config.json'))
 
 
 
 tokenizer = tokenization.FullTokenizer(
-        vocab_file=os.path.join(bert_pretrain_dir, 'vocab.txt'),
+        vocab_file=os.path.join('/content/Abstractive-Summarization-With-Transfer-Learning/uncased_L-12_H-768_A-12/vocab.txt'),
         do_lower_case=True)
 
 vocab_size = len(tokenizer.vocab)
