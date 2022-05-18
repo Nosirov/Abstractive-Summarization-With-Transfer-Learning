@@ -21,9 +21,9 @@ from __future__ import print_function
 
 # pylint: disable=wildcard-import
 
-from texar.module_base import *
-from texar.hyperparams import *
-from texar.context import *
+from texar.tf.module_base import *
+from texar.tf.hyperparams import *
+from texar.tf.context import *
 from texar import modules
 from texar import core
 from texar import losses
